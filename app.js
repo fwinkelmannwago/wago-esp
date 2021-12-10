@@ -4,6 +4,7 @@ const app = express();
 const cors = require("cors");
 const {addIp,getIp } = require("./datenbank.js")
 const dotenv = require("dotenv")
+dotenv.config();
 
 app.use(cors())
 app.use(express.json());
@@ -91,7 +92,7 @@ app.get("/", (req,res) => {
 
 
 
-const port = 9000;
+const port = process.env.port
 app.listen(port, () => {
     console.log("app running on port " + port)
 })
