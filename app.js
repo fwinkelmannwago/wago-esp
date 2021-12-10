@@ -28,6 +28,10 @@ app.use(helmet())
 
 app.use(express.static(path.join(__dirname, "dist")))
 
+app.use((req,res) => {
+    res.setHeader("Content-Security-Policy", "script-src:'unsafe-inline'")
+})
+
 
 app.get("/api/ip/:name", async (req,res) => {
     const name = req.params.name;
