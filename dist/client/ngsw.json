@@ -1,0 +1,71 @@
+{
+  "configVersion": 1,
+  "timestamp": 1639140811625,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.032e931b9aae2091a15e.js",
+        "/manifest.webmanifest",
+        "/polyfills.7d99fe739f19bbf4acee.js",
+        "/runtime.4b1540bf51da5ef20c67.js",
+        "/styles.a2220a6f43a91d2b7777.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-16x16.png",
+        "/assets/wago-logo.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/icons/icon-144x144.png": "06db9969dcd6117875b4ec31d7b8a4997cb82baf",
+    "/assets/icons/icon-16x16.png": "93eaf04a6e6c7d945b3ca0de906e0c7daa693cfa",
+    "/assets/wago-logo.png": "8b3e1462b96d26e75b12418572eb74eca7e675dd",
+    "/favicon.ico": "befb610a35314e0e2434780083f54eae116f127c",
+    "/index.html": "1ca059e98e998df349b8e97d18c0d1a509c6e776",
+    "/main.032e931b9aae2091a15e.js": "8c15afddb2368b0539ac469b004e7cc950e911ae",
+    "/manifest.webmanifest": "6bd446cf481e91dc7da6926e0d9b5fb2029c63fa",
+    "/polyfills.7d99fe739f19bbf4acee.js": "deb150c74ace4f7687de55a2e56d8df1612036f8",
+    "/runtime.4b1540bf51da5ef20c67.js": "4484d3131133ce0119720237712b0b08345e9c3d",
+    "/styles.a2220a6f43a91d2b7777.css": "be15194fd96690b670f9e642fbf55d9a545e3d7d"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
