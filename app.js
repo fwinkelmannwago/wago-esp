@@ -3,7 +3,6 @@ const path = require("path")
 const rateLimit = require("express-rate-limit")
 const dotenv = require("dotenv");
 const app = express();
-const PORT = 3000;
 const xss = require("xss-clean")
 const helmet = require("helmet")
 const {addIp,getIp } = require("./datenbank.js")
@@ -103,6 +102,8 @@ app.post("/api/ip", async (req,res) => {
 app.get("*", (req,res) => {
     res.sendFile(path.join(__dirname, "dist", "index.html"))
 })
+
+const PORT = process.env.PORT ?? 3000;
 
 app.listen(PORT, () => {
     console.log(`APP LISTENING ON ${PORT}`)
