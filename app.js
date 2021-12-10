@@ -92,7 +92,7 @@ app.get("/", (req,res) => {
 
 
 
-const port = process.env.port
+const port = process.env.PORT
 app.listen(port, () => {
     console.log("app running on port " + port)
 })
