@@ -7,9 +7,13 @@ const PORT = 3000;
 const xss = require("xss-clean")
 const helmet = require("helmet")
 const {addIp,getIp } = require("./datenbank.js")
+const cors = require("cors");
 dotenv.config()
 
+
+app.use(cors());
 app.use(express.json({limit: '10kb'}))
+
 
 const limit = rateLimit({
     max: 100,// max requests
