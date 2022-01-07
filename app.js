@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const app = express();
 const cors = require("cors");
-const {addIp,getIp } = require("./datenbank.js")
+const {addIp,getIp, removeOldEntries } = require("./datenbank.js")
 const dotenv = require("dotenv")
 dotenv.config();
 
@@ -96,5 +96,10 @@ const port = process.env.PORT
 app.listen(port, () => {
     console.log("app running on port " + port)
 })
+
+// einmal am tag werden alte eintraege gelöscht
+setInterval( async () => {
+    await removeOldEntries()
+},1000*60*60*24)
 
 

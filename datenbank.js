@@ -35,7 +35,6 @@ exports.addIp = async function(name, ip) {
     // Daten einlesen
     let data
     try {
-        await removeOldEntries();
         data = await getData();
     } catch(err) {
         console.log(err)
@@ -66,25 +65,23 @@ exports.getIp = async function(name) {
     }
 }
 
-const removeOldEntries = async function() {
+exports.removeOldEntries = async function() {
     try {
             const timeDeletion = parseInt(process.env.TIMETILLDELETION);
-            console.log(timeDeletion)
             const data = await getData();
+            
             
             Object.entries(data).forEach(el => {
             const oldDate = new Date(el[1].createdAt);
-                console.log(Date.now() - oldDate.getTime())
-            if (Date.now() - oldDate.getTime() > timeDeletion) {
-                console.log(el[0])
+                if (Date.now() - oldDate.getTime() > timeDeletion) {
+                console.log("Es wurde der Eintrag " + JSON.stringify(data) + " gelöscht");
                 delete data[el[0]]
             }
            
         })
-        console.log(data)
+
         await writeDataToFile(JSON.stringify(data))
 
-       
     } catch(err) {
         console.log(err)
         console.log("alte einträge konnten nicht gelöscht werden")
