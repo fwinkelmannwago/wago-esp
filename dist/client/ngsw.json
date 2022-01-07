@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1641543886905,
+  "timestamp": 1641548999558,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.1ecdb8a3ab9fe9a15595.js",
+        "/main.1d09dac207757fc7b7f2.js",
         "/manifest.webmanifest",
         "/polyfills.7d99fe739f19bbf4acee.js",
         "/runtime.4b1540bf51da5ef20c67.js",
@@ -42,8 +42,8 @@
     "/assets/icons/icon-16x16.png": "93eaf04a6e6c7d945b3ca0de906e0c7daa693cfa",
     "/assets/wago-logo.png": "8b3e1462b96d26e75b12418572eb74eca7e675dd",
     "/favicon.ico": "befb610a35314e0e2434780083f54eae116f127c",
-    "/index.html": "d3501096dcc6aec9c3451285d5bff7b30262adaf",
-    "/main.1ecdb8a3ab9fe9a15595.js": "672dbb805af0c547ffe58f68d2a1a82208e0b9c1",
+    "/index.html": "a3462142d81b2c330b49751a4bee275e3e930d3c",
+    "/main.1d09dac207757fc7b7f2.js": "73eece857a761b3e6d2f2fea866384ba2506018e",
     "/manifest.webmanifest": "6bd446cf481e91dc7da6926e0d9b5fb2029c63fa",
     "/polyfills.7d99fe739f19bbf4acee.js": "deb150c74ace4f7687de55a2e56d8df1612036f8",
     "/runtime.4b1540bf51da5ef20c67.js": "4484d3131133ce0119720237712b0b08345e9c3d",
